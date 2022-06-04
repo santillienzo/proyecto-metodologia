@@ -1,0 +1,2 @@
+# Detector de Imagenes Similares
+_Este es un proyecto de código abierto para el desarrollo de un software que detecte y agrupe imagenes similares aplicando distintos métodos de convolución y operaciones matemáticas a nivel de pixeles. Pretende usarse para el ordenamiento automático de imagenes en una galeria de fotos y facilitar el guardado y la eliminación de los archivos ahorrando tiempo al usuario.
