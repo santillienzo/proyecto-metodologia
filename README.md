@@ -6,5 +6,5 @@ Con el paso de los años y el avance de la tecnología, como la mejora en las c�
 
 Actualmente, existen programas que ofrecen la búsqueda de archivos repetidos, pero únicamente realizan la búsqueda por su tamaño o nombre, y no por el contenido de las imágenes.
 
-La propuesta de este proyecto consta en la búsqueda de imágenes similares de la forma más cercana a lo que una persona lo haría, basándose en sus colores, figuras y tamaños.
+La propuesta de este proyecto consiste en la búsqueda de imágenes similares de la forma más cercana a lo que una persona lo haría, basándose en sus colores, figuras y tamaños.
 
