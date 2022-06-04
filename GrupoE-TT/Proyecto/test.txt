@@ -1,0 +1,2 @@
+cd "C:\Users\Enzo\OneDrive\Documentos\Workspace\Workspace PyCharm\ProyectoMetodologia"
+python -m http.server 8000

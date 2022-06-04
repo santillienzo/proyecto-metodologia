@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convoluciones</title>
+</head>
+<body>
+    <h2>Gato Original</h2>
+    <img src="cat.jpg"/>
+    <h2>Blanco y negro</h2>
+    <canvas id="canvas"></canvas>
+    <h2>Convolucion JAVASCRIPT</h2>
+    <canvas id="resultado"></canvas>
+    <h2>Convolucion PYTHON</h2>
+    <canvas id="resultadoPython"></canvas>
+    <script>
+
+        var image = new Image();
+        var imagePython = new Image();
+        imagePython.addEventListener('load', imageLoaded, false);
+        image.src = "cat.jpg";
+        imagePython.src = "catPython.jpg";
+
+        function imageLoaded(){
+            var canvas = document.getElementById("canvas")
+            var ctx = canvas.getContext('2d');
+
+            canvas.width = image.width;
+            canvas.height = image.height;
+
+            ctx.drawImage(image,0,0,image.width,image.height)
+
+            blancoYNegro(canvas);
+
+            var resultado = document.getElementById("resultado")
+            var resultadoPython = document.getElementById("resultadoPython")
+
+            convolucionar(canvas, resultado)
+            mostrarPython(resultadoPython)
+        }
+
+        function blancoYNegro(canvas){
+            var ctx = canvas.getContext('2d');
+            var imgData = ctx.getImageData(0,0,canvas.width, canvas.height)
+            var pixeles = imgData.data;
+
+            for(var p=0; p < pixeles.length; p += 4) {
+                var rojo = pixeles[p];
+                var verde = pixeles[p+1];
+                var azul = pixeles[p+2];
+                var alpha = pixeles[p+3];
+
+                var gris = (rojo + verde + azul) / 3;
+
+                pixeles[p] = gris;
+                pixeles[p+1] = gris;
+                pixeles[p+2] = gris;
+            }
+            ctx.putImageData(imgData, 0, 0);
+        }
+        
+        function convolucionar(canvasFuente, canvasDestino){
+            var ctxFuente = canvasFuente.getContext("2d");
+            var imgDataFuente = ctxFuente.getImageData(0, 0, canvasFuente.width, canvasFuente.height);
+            var pixelesFuente = imgDataFuente.data;
+
+            canvasDestino.width = canvasFuente.width;
+            canvasDestino.height = canvasFuente.height;
+
+            var ctxDestino = canvasDestino.getContext("2d");
+            var imgDataDestino = ctxDestino.getImageData(0, 0, canvasFuente.width, canvasFuente.height);
+            var pixelesDestino = imgDataDestino.data;
+
+            var kernel = [
+                [-1,-1,-1],
+                [-1,8,-1],
+                [-1,-1,-1]
+            ];
+
+            for(var y=1; y<canvasFuente.height-1; y++){
+                for(var x=1; x<canvasFuente.width-1; x++){
+
+                    var idx = ((y*canvasFuente.width) + x) * 4;
+                    var total = 0;
+
+                    for(var kernelY = 0; kernelY < 3; kernelY++){
+                        for(var kernelX = 0;kernelX < 3; kernelX++){
+
+                            total += kernel[kernelY][kernelX] * pixelesFuente[((((y+(kernelY-1))*canvasFuente.width) + (x+(kernelX-1))) * 4)];
+                        }
+                    }
+
+                    pixelesDestino[idx] = total;
+                    pixelesDestino[idx+1] = total;
+                    pixelesDestino[idx+2] = total;
+                    pixelesDestino[idx+3] = 255;
+                }
+            }
+            ctxDestino.putImageData(imgDataDestino, 0, 0)
+            console.log(`KERNEL HECHO EN JAVASCRIPT: \n`);
+            console.log(pixelesDestino)
+        }
+        function mostrarPython(canvasPython){
+            var ctxPython = canvasPython.getContext("2d");
+            var imgDataPython = ctxPython.getImageData(0, 0, canvasPython.width, canvasPython.height);
+            var pixelesPython = imgDataPython.data;
+
+            canvasPython.width = imagePython.width;
+            canvasPython.height = imagePython.height;
+
+            ctxPython.drawImage(imagePython,0,0,imagePython.width,imagePython.height)
+            console.log(`KERNEL HECHO EN PYTHON: \n`);
+            console.log(pixelesPython);
+        }
+    </script>
+</body>
+</html>

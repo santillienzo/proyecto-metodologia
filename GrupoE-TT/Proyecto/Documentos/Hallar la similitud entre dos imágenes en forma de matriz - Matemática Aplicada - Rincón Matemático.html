@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="es">
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://foro.rinconmatematico.com/Themes/JustTheme/css/fontawesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="https://foro.rinconmatematico.com/Themes/JustTheme/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="https://foro.rinconmatematico.com/Themes/JustTheme/css/index.css?fin20" />
+	<link rel="stylesheet" type="text/css" href="https://foro.rinconmatematico.com/Themes/JustTheme/css/app.css?fin20" />
+	<link rel="stylesheet" type="text/css" href="https://foro.rinconmatematico.com/Themes/JustTheme/css/responsive.css" />
+	<link rel="stylesheet" type="text/css" href="https://foro.rinconmatematico.com/Themes/default/css/webkit.css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://foro.rinconmatematico.com/Themes/JustTheme/scripts/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://foro.rinconmatematico.com/Themes/JustTheme/scripts/fontawesome.min.js"></script>
+	<script type="text/javascript" src="https://foro.rinconmatematico.com/Themes/default/scripts/script.js?fin20"></script>
+	<script type="text/javascript" src="https://foro.rinconmatematico.com/Themes/JustTheme/scripts/theme.js?fin20"></script>
+	<script type="text/javascript"><!-- // --><![CDATA[
+		var st_disable_theme_effects = true;
+		var st_animation = "bounceIn";
+		var st_enable_tooltips = true;
+		var st_disable_fa_icons = false;
+		var txtnew = "Nuevo";
+		var txtsave = "Guardar";
+		var theme_id = "6";
+		var variante = "";
+		var varianteurl = "";
+		var smf_theme_url = "https://foro.rinconmatematico.com/Themes/JustTheme";
+		var smf_default_theme_url = "https://foro.rinconmatematico.com/Themes/default";
+		var smf_images_url = "https://foro.rinconmatematico.com/Themes/JustTheme/images";
+		var smf_scripturl = "https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;";
+		var colSessionVar = "d1b8a2d913e";
+		var colSessionId = "cb72e85382c0334ef5deb031eda6e466";
+		var smf_iso_case_folding = false;
+		var smf_charset = "UTF-8";
+		var ajax_notification_text = "Cargando...";
+		var ajax_notification_cancel_text = "Cancelar";
+	// ]]></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Hallar la similitud entre dos imágenes en forma de matriz - Matemática Aplicada - Rincón Matemático" />
+	<meta property="og:title" content="Hallar la similitud entre dos imágenes en forma de matriz" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;topic=69481.0" />
+	<meta property="og:image" content="https://foro.rinconmatematico.com/Themes/JustTheme/images/thumbnail.gif" />
+	<meta property="og:description" content="Hallar la similitud entre dos imágenes en forma de matriz - Matemática Aplicada - Rincón Matemático" />
+	<meta property="og:site_name" content="Rincón Matemático" />
+	<title>Hallar la similitud entre dos imágenes en forma de matriz - Matemática Aplicada - Rincón Matemático</title>
+	<link rel="canonical" href="https://foro.rinconmatematico.com/index.php?topic=69481.0" />
+	<link rel="help" href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;action=help" />
+	<link rel="search" href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;action=search" />
+	<link rel="contents" href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;" />
+	<link rel="alternate" type="application/rss+xml" title="Rincón Matemático - RSS" href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;type=rss;action=.xml" />
+	<link rel="index" href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;board=53.0" /><script src="https://www.google.com/recaptcha/api.js"></script>
+	<link rel="stylesheet" type="text/css" id="recaptcha_css" href="https://foro.rinconmatematico.com/Themes/default/css/recaptcha.css" />
+	<script type="text/javascript"><!-- // --><![CDATA[
+		var _ohWidth = 480;
+		var _ohHeight = 270;
+	// ]]></script>
+	<script type="text/javascript">!window.jQuery && document.write(unescape('%3Cscript src="//code.jquery.com/jquery-1.9.1.min.js"%3E%3C/script%3E'))</script>
+	<script type="text/javascript" src="https://foro.rinconmatematico.com/Themes/default/scripts/ohyoutube.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://foro.rinconmatematico.com/Themes/default/css/oharaEmbed.css" />
+	<link rel="stylesheet" type="text/css" id="quick_spoiler_css" href="https://foro.rinconmatematico.com/Themes/default/css/quick_spoiler.css" />
+</head>
+<body>
+	<header>
+		<div class="header_layer">
+			<div class="wrapper" style="width: 95%">
+				<div class="logo">
+					<h1 class="forumtitle">
+						<a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;"><img src="https://foro.rinconmatematico.com/Themes/JustTheme/images/theme/logo.png" alt="Rincón Matemático" /></a>
+					</h1>
+				</div>
+				<div class="social_networks">
+					<ul class="social-links">
+						<li style="display:none"></li>
+					</ul>
+				</div>
+				<div class="user-block">
+					<div class="user-menu">
+						<ul class="dropdown">
+							<li>
+								<a href="#" data-toggle="modal" data-target="#loginModal" class="other-action user-login">
+									<i class="fas fa-sign-in-alt"></i> Ingresar
+								</a>
+							</li>
+							<li>
+								<a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;action=register" class="other-action user-register">
+									<i class="fas fa-key"></i> Registrarse
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="break-column"></div>
+				<div class="search_bar">
+					<span class="forum_date">
+						31 Mayo, 2022, 11:09 pm
+					</span>
+					<form id="search_form" action="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;action=search2" method="post" accept-charset="UTF-8">
+						<input type="text" name="search" value="" placeholder="Buscar..." class="input_text" />
+						<button type="submit" name="submit" value=""><i class="fa fa-search"></i></button>
+						<input type="hidden" name="advanced" value="0" />
+						<input type="hidden" name="topic" value="69481" />
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="main-nav">
+			<div class="wrapper" style="width: 95%">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand d-lg-none d-sm-block" href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;">Menu</a>
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#userinfo" aria-controls="userinfo" aria-expanded="false">
+			<span class="fa fa-user"></span>
+		</button>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false">
+			<span class="fa fa-bars"></span>
+		</button>
+		<div id="userinfo" class="navbar-other collapse">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal"><i class="fas fa-sign-in-alt"></i> Ingresar</a></li>
+				<li class="nav-item"><a class="nav-link" href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;action=register"><i class="fas fa-user-plus"></i> Registrarse</a></li>
+			</ul>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="navbar-nav mr-auto">
+				<li id="button_home" class="nav-item button_home active">
+					<a class="nav-link" href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;">
+						Inicio
+					</a>
+				</li>
+				<li id="button_search" class="nav-item button_search">
+					<a class="nav-link" href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;action=search">
+						Buscar
+					</a>
+				</li>
+				<li id="button_login" class="nav-item button_login">
+					<a class="nav-link" href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;action=login">
+						Ingresar
+					</a>
+				</li>
+				<li id="button_register" class="nav-item button_register">
+					<a class="nav-link" href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;action=register">
+						Registrarse
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+			</div>
+		</div>
+	</header>
+	<div class="wrapper" style="width: 95%">
+		<div id="content_section"><div class="frame">
+			<div id="main_content_section">
+	<div class="linktree_back">
+		<ol class="breadcrumb">
+			<li>
+				<a class="linktree_homeglobe" href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;"><span class="fa fa-home"></span></a>
+			</li>
+			<li>
+				<a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;" id="breadcrumbDrop" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rincón Matemático</a>
+				<ul class="dropdown-menu breadcrumb-dropdown" aria-labelledby="breadcrumbDrop">
+			<li>
+					<span class="extra">&#187; </span>
+				<a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;#c20">Matemática</a>
+			</li>
+			<li>
+					<span class="extra">&#187; </span>
+				<a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;board=53.0">Matemática Aplicada</a>
+			</li>
+				</ul>
+			</li>
+			<li class="active">
+				<span class="extra">Tema: </span>
+				<a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;topic=69481.0">Hallar la similitud entre dos imágenes en forma de matriz</a>
+			</li>
+		</ol>
+	</div>
+			<a id="top"></a>
+			<a id="msg276536"></a>
+			<div class="pagesection">
+				<div class="nextlinks"><a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;topic=69481.0;prev_next=prev#new">&laquo; anterior</a> <a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;topic=69481.0;prev_next=next#new">próximo &raquo;</a></div>
+		<div class="buttonlist floatright">
+			<ul>
+				<li>
+					<a class="button_strip_print" href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;action=printpage;topic=69481.0" rel="new_win nofollow">
+						<i class="fa fa-print"></i>&nbsp;
+						Imprimir
+					</a>
+				</li>
+			</ul>
+		</div>
+				<div class="pagelinks floatleft">Páginas: [<strong>1</strong>]   &nbsp;&nbsp;<a href="#lastPost"><strong>Ir Abajo</strong></a></div>
+			</div>
+			<div id="forumposts">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<img src="https://foro.rinconmatematico.com/Themes/JustTheme/images/topic/normal_post.gif" align="bottom" alt="" />
+						<span id="author">Autor</span>
+						Tema: Hallar la similitud entre dos imágenes en forma de matriz
+					</h3>
+				</div>
+				<p id="whoisviewing" class="smalltext">0 Usuarios y 1 Visitante están viendo este tema.
+				</p>
+				<form action="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;action=quickmod2;topic=69481.0" method="post" accept-charset="UTF-8" name="quickModForm" id="quickModForm" style="margin: 0;" onsubmit="return oQuickModify.bInEditMode ? oQuickModify.modifySave('cb72e85382c0334ef5deb031eda6e466', 'd1b8a2d913e') : false">
+				<div class="windowbg">
+					<div class="date_post"><div>29 Julio, 2013, 11:47 pm</div>
+						<span>Leído 1694 veces</span>
+					</div>
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;action=profile;u=28859" title="Ver perfil de tasel" style="color: #6a84c0;">tasel</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_276536_extra_info">
+								<li class="postgroup">$$\Large \color{#6a84c0}\pi$$</li>
+								<li class="postcount">Mensajes: 2</li>
+								<li class="karma">Karma: +0/-0</li>
+								<li class="gender">Sexo: <img class="gender" src="https://foro.rinconmatematico.com/Themes/JustTheme/images/Male.gif" alt="Masculino" /></li>
+								<li class="profile">
+									<ul>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="wrap_postarea">
+							<div class="postarea">
+								<div class="flow_hidden">
+									<div class="keyinfo">
+										<div class="messageicon">
+											<img src="https://foro.rinconmatematico.com/Themes/JustTheme/images/post/xx.gif" alt="" />
+										</div>
+										<h5 id="subject_276536">
+											<a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;topic=69481.msg276536#msg276536" rel="nofollow">Hallar la similitud entre dos imágenes en forma de matriz</a>
+										</h5>
+										<div id="msg_276536_quick_mod"></div>
+									</div>
+								</div>
+								<div class="post">
+									<div class="inner" id="msg_276536">Hola a todos!<br /><br />Soy un teleco programador que necesita un cable. He creado recientemente Mosaime, una web muy chula para hacer mosaicos con tus propias fotos. La dirección es mosai.me<br />Recientemente he mejorado el algoritmo de creación de mosaicos, pero es imperfecto porque me he inventado una fórmula matemática, y estoy seguro de que hay un método mejor. Por eso posteo aquí. Si el subforo que he elegido es incorrecto, disculpen las molestias.<br /><br /><strong>El problema es el siguiente:</strong><br /><br />Tengo una matriz de, por ejemplo, 5x5. La matriz tiene valores enteros entre 0 y 255. Esta matriz representa un canal de color de una imagen.<br />Por otro lado, tengo un listado de muchas matrices del mismo tamaño y de mismas características, que también representan imágenes.<br />El problema reside en <strong>averiguar qué matriz de la del listado se parece más a la matriz dada al principio</strong>.<br />Estas matrices son cada una de las fotos pequeñas que componen los fotomosaicos.<br /><br />Pero, ¿qué es parecerse? Lo explico con un ejemplo.<br /><br />Mi primera idea fue usar distancia euclídea, tomando cada elemento de la matriz como una dimensión independiente.<br />El problema de este método es que dada la siguiente matriz:<br /><br />\( \begin{pmatrix} 50 &amp; 50 &amp; 50 \\ 50 &amp; 50 &amp; 50 \\ 50 &amp; 50 &amp; 50 \end{pmatrix} \)<br /><br />dista igual de estas dos matrices:<br /><br />\( \begin{pmatrix} 10 &amp; 10 &amp; 10 \\ 10 &amp; 10 &amp; 10 \\ 10 &amp; 10 &amp; 10 \end{pmatrix} \)<br />\( \begin{pmatrix} 10 &amp; 10 &amp; 90 \\ 10 &amp; 90 &amp; 90 \\ 90 &amp; 90 &amp; 90 \end{pmatrix} \)<br /><br />Cuando las imágenes no se parecen nada. En esta situación, elegir la primera matriz como la más parecida sería un acierto porque el color es más uniforme, al igual que en la matriz primera. Sin embargo, en la segunda hay un contraste fuerte en un lado. Al sustituirla, quedaría mal.<br /><br />Por tanto, yo diría que influye la desviación típica. Digamos que dos matrices de imágenes son parecidas cuando tienen una baja distancia euclídea y desviaciones típicas similares. Si las dos condiciones anteriores se cumplen, entonces una matriz será susceptible de ser sustituida por la otra y el mosaico se verá bien.<br /><br /><strong>¿Se os ocurre alguna herramienta que permita obtener una distancia según estas condiciones?</strong><br /><br />Mi solución provisional ha sido calcular la distancia euclídea como he dicho antes, pero introduciendo dentro de la raíz la diferencia de desviaciones típicas. Totalmente inventado empíricamente para que me quedaran bien los mosaicos.<br />Quizás la solución sea muy obvia. Si es fácil mejor.<br /><br />Muchas gracias por vuestro tiempo!! <img src="https://foro.rinconmatematico.com/Smileys/default/smiley.gif" alt="&#58;&#41;" title="&#58;sonrisa&#58;" class="smiley" /><br /></div>
+								</div>
+							</div>
+							<div class="moderatorbar">
+								<div class="smalltext modified" id="modified_276536">
+								</div>
+								<div class="smalltext reportlinks">
+									<img src="https://foro.rinconmatematico.com/Themes/JustTheme/images/ip.gif" alt="" />
+									En línea
+								</div>
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg276543"></a>
+				<div class="windowbg2">
+					<div class="date_post"><div>30 Julio, 2013, 03:30 am</div>
+						<span>Respuesta #1</span>
+					</div>
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;action=profile;u=6460" title="Ver perfil de Héctor Manuel" style="color: #4e9497;">Héctor Manuel</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_276543_extra_info">
+								<li class="membergroup">
+									<span class="rincon-rangos " style="background-color: #4e9497;">
+										Lathi
+									</span>
+								</li>
+								<li class="postcount">Mensajes: 3,700</li>
+								<li class="gender">País: <img src="https://foro.rinconmatematico.com/Themes/JustTheme/images/flags/mx.png" alt="mx" title="Mexico" /></li>
+								<li class="karma">Karma: +0/-0</li>
+								<li class="gender">Sexo: <img class="gender" src="https://foro.rinconmatematico.com/Themes/JustTheme/images/Male.gif" alt="Masculino" /></li>
+								<li class="profile">
+									<ul>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="wrap_postarea">
+							<div class="postarea">
+								<div class="flow_hidden">
+									<div class="keyinfo">
+										<div class="messageicon">
+											<img src="https://foro.rinconmatematico.com/Themes/JustTheme/images/post/xx.gif" alt="" />
+										</div>
+										<h5 id="subject_276543">
+											<a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;topic=69481.msg276543#msg276543" rel="nofollow">Re: Hallar la similitud entre dos imágenes en forma de matriz</a>
+										</h5>
+										<div id="msg_276543_quick_mod"></div>
+									</div>
+								</div>
+								<div class="post">
+									<div class="inner" id="msg_276543">Hola. Conozco algo del tema, ya que en mi maestría tuve que hacer análisis de imágenes reales de corazones para detectar anomalías cardíacas (aunque la verdad no sé por qué me pidieron hacer eso&nbsp; <img src="https://foro.rinconmatematico.com/Smileys/default/tongue.gif" alt="&#58;P" title="&#58;lengua_afuera&#58;" class="smiley" />)<br /><br />1) Lo primero que haría sería &quot;normalizar&quot;, ya que vamos a hacer comparaciones. Es decir, cambiar la escala 0-255 a 0-1. Claro, esto se hace de forma lineal. Además porque nos permitirá utilizar distribuciones de probabilidad.<br /><br />2) Hecho lo anterior, se me ocurren dos cosas:<br />&nbsp;<br />&nbsp; 2a) No utilizar la distancia euclídea como la planteas. Razón? Hasta donde recuerdo, esta distancia no nos da un espacio normado en el espacio de matrices, de modo que perdemos toda la geometría. Me parece mejor utilizar la norma uniforme:&nbsp; <a href="http://es.wikipedia.org/wiki/Norma_matricial" class="bbc_link" target="_blank" rel="noopener noreferrer">http://es.wikipedia.org/wiki/Norma_matricial</a> (es la que aparece como \( \|A\|_{\infty} \)). No conozco tu nivel en matemáticas, así que no me aventuro a decirte el por qué formalmente. Pero si tu curiosidad es mucha, imagina que las matrices son funciones lineales de \( \mathbb{R}^n \) en \( \mathbb{R} \) (es decir, funcionales). Entonces con esta distancia, dos matrices son casi iguales si sus gráficas son tremendamente parecidas.<br /><br />&nbsp; 2b) Otro camino es irnos sobre probabilidades. Obtén una distribución de probabilidad que aproxime a tu imagen dada. Esto lo puedes hacer con un histograma. Una vez hecho esto, obtén la distribución de probabilidad de cada una de tus imágenes prueba. Elige como la mejor a aquella cuya distribución de probabilidad es más parecida a la dada. Para hacer esto, calcula el máximo de cada distribución de probabilidad. Luego, realiza la operación \( |\max_{dada}-\max{prueba}| \) para cada máximo encontrado. La mejor distribución será aquella que nos de el menor resultado de los valores absolutos anteriores ( y de hecho, el por qué de esto, es la misma idea de 2a).<br /><br /><br />Por otra parte, creo que tu problema se pondrá peor. Imagino que trabajas en RGB y no únicamente en blanco y negro, de modo que seguro por cada imagen tienes tres matrices. Es correcto?<br /><br />Saludos.</div>
+								</div>
+							</div>
+							<div class="moderatorbar">
+								<div class="smalltext modified" id="modified_276543">
+								</div>
+								<div class="smalltext reportlinks">
+									<img src="https://foro.rinconmatematico.com/Themes/JustTheme/images/ip.gif" alt="" />
+									En línea
+								</div>
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg276568"></a>
+				<div class="windowbg">
+					<div class="date_post"><div>30 Julio, 2013, 03:31 pm</div>
+						<span>Respuesta #2</span>
+					</div>
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;action=profile;u=28859" title="Ver perfil de tasel" style="color: #6a84c0;">tasel</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_276568_extra_info">
+								<li class="postgroup">$$\Large \color{#6a84c0}\pi$$</li>
+								<li class="postcount">Mensajes: 2</li>
+								<li class="karma">Karma: +0/-0</li>
+								<li class="gender">Sexo: <img class="gender" src="https://foro.rinconmatematico.com/Themes/JustTheme/images/Male.gif" alt="Masculino" /></li>
+								<li class="profile">
+									<ul>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="wrap_postarea">
+							<div class="postarea">
+								<div class="flow_hidden">
+									<div class="keyinfo">
+										<div class="messageicon">
+											<img src="https://foro.rinconmatematico.com/Themes/JustTheme/images/post/xx.gif" alt="" />
+										</div>
+										<h5 id="subject_276568">
+											<a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;topic=69481.msg276568#msg276568" rel="nofollow">Re: Hallar la similitud entre dos imágenes en forma de matriz</a>
+										</h5>
+										<div id="msg_276568_quick_mod"></div>
+									</div>
+								</div>
+								<div class="post">
+									<div class="inner" id="msg_276568">Muchas gracias Héctor Manuel!<br /><br />Tengo que analizar tu respuesta cuando tenga tiempo. Por ahora se me ha ocurrido una posible pega al método 2b. <br /><br />Corrígeme si me equivoco. Un histograma podría representar a una imagen que sea blanca por la izquierda y negra por la derecha. Otra imagen que sea al revés (blanco en derecha, negro en izquierda) tendría el mismo histograma. En realidad, dichas imágenes son muy diferentes y no serviría.<br />Es un razonamiento totalmente intuitivo que me ha salido al pensar en histogramas, pero ya digo que puede que no sea el caso.<br /><br />Respecto a los canales, es correcto que habría que aplicar esto luego tres veces. Luego habría que obtener una medida global que contase los resultados obtenidos para el canal R, el G y el B.<br /><br />Otro último detalle que no mencioné es que el método debería ser algorítmicamente lo más simple posible. Todo el proceso se hace en Java, que no es un lenguaje de programación muy pensado para cálculos complejos. Está hecho así porque es el lenguaje que mejor conozco, y simplifica mucho las cosas en el servidor web.<br /><br />Voy a mirarme cuando pueda la norma uniforme para ver cómo aplicarla.<br /><br />Un saludo!<br /></div>
+								</div>
+							</div>
+							<div class="moderatorbar">
+								<div class="smalltext modified" id="modified_276568">
+								</div>
+								<div class="smalltext reportlinks">
+									<img src="https://foro.rinconmatematico.com/Themes/JustTheme/images/ip.gif" alt="" />
+									En línea
+								</div>
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg276574"></a>
+				<div class="windowbg2">
+					<div class="date_post"><div>30 Julio, 2013, 06:41 pm</div>
+						<span>Respuesta #3</span>
+					</div>
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;action=profile;u=6460" title="Ver perfil de Héctor Manuel" style="color: #4e9497;">Héctor Manuel</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_276574_extra_info">
+								<li class="membergroup">
+									<span class="rincon-rangos " style="background-color: #4e9497;">
+										Lathi
+									</span>
+								</li>
+								<li class="postcount">Mensajes: 3,700</li>
+								<li class="gender">País: <img src="https://foro.rinconmatematico.com/Themes/JustTheme/images/flags/mx.png" alt="mx" title="Mexico" /></li>
+								<li class="karma">Karma: +0/-0</li>
+								<li class="gender">Sexo: <img class="gender" src="https://foro.rinconmatematico.com/Themes/JustTheme/images/Male.gif" alt="Masculino" /></li>
+								<li class="profile">
+									<ul>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="wrap_postarea">
+							<div class="postarea">
+								<div class="flow_hidden">
+									<div class="keyinfo">
+										<div class="messageicon">
+											<img src="https://foro.rinconmatematico.com/Themes/JustTheme/images/post/xx.gif" alt="" />
+										</div>
+										<h5 id="subject_276574">
+											<a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;topic=69481.msg276574#msg276574" rel="nofollow">Re: Hallar la similitud entre dos imágenes en forma de matriz</a>
+										</h5>
+										<div id="msg_276574_quick_mod"></div>
+									</div>
+								</div>
+								<div class="post">
+									<div class="inner" id="msg_276574"><div class="quoteheader"><div class="topslice_quote"><a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;topic=69481.msg276568#msg276568">Cita de: tasel en 30 Julio, 2013, 03:31 pm</a></div></div><blockquote class="bbc_standard_quote">Corrígeme si me equivoco. Un histograma podría representar a una imagen que sea blanca por la izquierda y negra por la derecha. Otra imagen que sea al revés (blanco en derecha, negro en izquierda) tendría el mismo histograma. En realidad, dichas imágenes son muy diferentes y no serviría.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br />No. Los histogramas sí varían. Por ejemplo, como dices, si tienes una imagen de blanco a negro y otra de negro a blanco, sus histogramas sí sería distintos (aunque simétricos: es decir, uno es el espejo del otro, pero esto no es malo). El detalle del histograma es que dado uno histograma, no es posible restablecer la imagen del que proviene (un histograma puede pertenecer a varias imágenes distintas), pero por el tipo de trabajos que dices hacer, difícilmente se te presentará este problema.<br /><br />Desconozco cómo hacer esto en java. Yo trabajaba en matlab haciendo el procesamiento de imágenes.<br />Saludos.&nbsp; </div>
+								</div>
+							</div>
+							<div class="moderatorbar">
+								<div class="smalltext modified" id="modified_276574">
+								</div>
+								<div class="smalltext reportlinks">
+									<img src="https://foro.rinconmatematico.com/Themes/JustTheme/images/ip.gif" alt="" />
+									En línea
+								</div>
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				</form>
+			</div>
+			<a id="lastPost"></a>
+			<div class="pagesection">
+				
+		<div class="buttonlist floatright">
+			<ul>
+				<li>
+					<a class="button_strip_print" href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;action=printpage;topic=69481.0" rel="new_win nofollow">
+						<i class="fa fa-print"></i>&nbsp;
+						Imprimir
+					</a>
+				</li>
+			</ul>
+		</div>
+				<div class="pagelinks floatleft">Páginas: [<strong>1</strong>]   &nbsp;&nbsp;<a href="#top"><strong>Ir Arriba</strong></a></div>
+				<div class="nextlinks_bottom"><a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;topic=69481.0;prev_next=prev#new">&laquo; anterior</a> <a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;topic=69481.0;prev_next=next#new">próximo &raquo;</a></div>
+			</div>
+	<div class="linktree_back">
+		<ol class="breadcrumb">
+			<li>
+				<a class="linktree_homeglobe" href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;"><span class="fa fa-home"></span></a>
+			</li>
+			<li>
+				<a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;" id="breadcrumbDrop" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rincón Matemático</a>
+				<ul class="dropdown-menu breadcrumb-dropdown" aria-labelledby="breadcrumbDrop">
+			<li>
+					<span class="extra">&#187; </span>
+				<a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;#c20">Matemática</a>
+			</li>
+			<li>
+					<span class="extra">&#187; </span>
+				<a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;board=53.0">Matemática Aplicada</a>
+			</li>
+				</ul>
+			</li>
+			<li class="active">
+				<span class="extra">Tema: </span>
+				<a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;topic=69481.0">Hallar la similitud entre dos imágenes en forma de matriz</a>
+			</li>
+		</ol>
+	</div>
+			<div id="moderationbuttons"></div>
+			<div class="plainbox" id="display_jump_to">&nbsp;</div>
+		<br class="clear" />
+				<script type="text/javascript" src="https://foro.rinconmatematico.com/Themes/default/scripts/topic.js"></script>
+				<script type="text/javascript"><!-- // --><![CDATA[
+					if ('XMLHttpRequest' in window)
+					{
+						var oQuickModify = new QuickModify({
+							sScriptUrl: smf_scripturl,
+							bShowModify: false,
+							iTopicId: 69481,
+							sTemplateBodyEdit: '\n\t\t\t\t\t\t\t\t<div id="quick_edit_body_container" style="width: 90%">\n\t\t\t\t\t\t\t\t\t<div id="error_box" style="padding: 4px;" class="error"><' + '/div>\n\t\t\t\t\t\t\t\t\t<textarea class="editor" name="message" rows="12" style="width: 100%; margin-bottom: 10px;" tabindex="1">%body%<' + '/textarea><br />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="d1b8a2d913e" value="cb72e85382c0334ef5deb031eda6e466" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="topic" value="69481" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="msg" value="%msg_id%" />\n\t\t\t\t\t\t\t\t\t<div class="righttext">\n\t\t\t\t\t\t\t\t\t\t<input type="submit" name="post" value="Guardar" tabindex="2" onclick="return oQuickModify.modifySave(\'cb72e85382c0334ef5deb031eda6e466\', \'d1b8a2d913e\');" accesskey="s" class="button_submit" />&nbsp;&nbsp;<input type="submit" name="cancel" value="Cancelar" tabindex="3" onclick="return oQuickModify.modifyCancel();" class="button_submit" />\n\t\t\t\t\t\t\t\t\t<' + '/div>\n\t\t\t\t\t\t\t\t<' + '/div>',
+							sTemplateSubjectEdit: '<input type="text" style="width: 90%;" name="subject" value="%subject%" size="80" maxlength="80" tabindex="4" class="input_text" />',
+							sTemplateBodyNormal: '%body%',
+							sTemplateSubjectNormal: '<a hr'+'ef="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;'+'?topic=69481.msg%msg_id%#msg%msg_id%" rel="nofollow">%subject%<' + '/a>',
+							sTemplateTopSubject: 'Tema: %subject% &nbsp;(Leído 1694 veces)',
+							sErrorBorderStyle: '1px solid red'
+						});
+
+						aJumpTo[aJumpTo.length] = new JumpTo({
+							sContainerId: "display_jump_to",
+							sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">Ir a:<" + "/label> %dropdown_list%",
+							iCurBoardId: 53,
+							iCurBoardChildLevel: 0,
+							sCurBoardName: "Matemática Aplicada",
+							sBoardChildLevelIndicator: "==",
+							sBoardPrefix: "=> ",
+							sCatSeparator: "-----------------------------",
+							sCatPrefix: "",
+							sGoButtonLabel: "ir"
+						});
+
+						aIconLists[aIconLists.length] = new IconList({
+							sBackReference: "aIconLists[" + aIconLists.length + "]",
+							sIconIdPrefix: "msg_icon_",
+							sScriptUrl: smf_scripturl,
+							bShowModify: false,
+							iBoardId: 53,
+							iTopicId: 69481,
+							sSessionId: "cb72e85382c0334ef5deb031eda6e466",
+							sSessionVar: "d1b8a2d913e",
+							sLabelIconList: "Icono de mensaje",
+							sBoxBackground: "transparent",
+							sBoxBackgroundHover: "#ffffff",
+							iBoxBorderWidthHover: 1,
+							sBoxBorderColorHover: "#adadad" ,
+							sContainerBackground: "#ffffff",
+							sContainerBorder: "1px solid #adadad",
+							sItemBorder: "1px solid #ffffff",
+							sItemBorderHover: "1px dotted gray",
+							sItemBackground: "transparent",
+							sItemBackgroundHover: "#e0e0f0"
+						});
+					}
+				// ]]></script>
+		<script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=default,Safe"></script>
+		<script type="text/x-mathjax-config">
+			MathJax.Ajax.config.path["xypic"] = "\https://foro.rinconmatematico.com/Themes/default/scripts";
+		</script>
+		<script async type="text/x-mathjax-config">
+			MathJax.Hub.Register.StartupHook("TeX AMSmath Ready", function() {
+				MathJax.InputJax.TeX.Definitions.Add({
+					macros: {
+					setCounter: "setCounter"
+					}
+				}, null, true);
+				MathJax.InputJax.TeX.Parse.Augment({
+					setCounter: function(name) {
+					var num =  parseInt(this.GetArgument(name));
+					MathJax.Extension["TeX/AMSmath"].number = num;
+					}
+				});
+			});
+			MathJax.Hub.Config({
+				tex2jax: {
+					inlineMath: [["[texx]","[/texx]"],['\\(','\\)']],
+					skipTags: ["script","noscript","style","textarea","pre","code","nobbc"]
+				},
+				TeX: { 
+					equationNumbers: { autoNumber: "AMS" },
+					extensions: ["color.js","AMSmath.js","AMSsymbols.js","cancel.js","[xypic]/xypic.js"],
+					Macros: {
+						sen: "{\\operatorname\{sen\\,\}}",
+						cosec: "{\\operatorname\{cosec\\,\}}",
+						arcsen: "{\\operatorname\{arcsen\\,\}}",
+						arccot: "{\\operatorname\{arccot\\,\}}",
+						senh: "{\\operatorname\{senh\\,\}}",
+						tg: "{\\operatorname\{tg\\,\}}",
+						cotg: "{\\operatorname\{cotg\\,\}}",
+						arctg: "{\\operatorname\{arctg\\,\}}",
+						im: "{\\operatorname\{im\\,\}}",
+						eqn: "\\neq\{}",
+						fnot: "\\not",
+						fnearrow: "\\nearrow{}",
+					}
+				},
+				"HTML-CSS": {
+					styles: {".MathJax_Display": {display: "inline"}} 
+				},
+				"SVG": {
+					styles: {".MathJax_SVG_Display": {display: "inline"}} 
+				},
+			});
+			window.setInterval(loadPreview, 100);
+			function loadPreview(){MathJax.Hub.Queue(["Typeset",MathJax.Hub]);}
+		</script>
+		<script type="text/javascript">window.jQuery || document.write(unescape('%3Cscript src="//code.jquery.com/jquery.min.js"%3E%3C/script%3E'))</script>
+		<script type="text/javascript" src="https://foro.rinconmatematico.com/Themes/default/scripts/quick_spoiler.js"></script>
+			</div>
+		</div></div>
+	</div>
+	<footer>
+		<div class="wrapper" style="width: 95%">
+			<div class="smf">
+				<ul class="reset">
+					<li class="copyright">
+			<span class="smalltext" style="display: inline; visibility: visible; font-family: Verdana, Arial, sans-serif;"><a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;action=credits" title="Simple Machines Forum" target="_blank" class="new_win">SMF 2.0.19</a> |
+ <a href="http://www.simplemachines.org/about/smf/license.php" title="License" target="_blank" class="new_win">SMF &copy; 2020</a>, <a href="http://www.simplemachines.org" title="Simple Machines" target="_blank" class="new_win">Simple Machines</a>
+			</span></li>
+				</ul>
+			</div>
+			<div class="theme">
+				<ul class="reset">
+					<li class="copyright"><a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;">Rincón Matemático &copy; 2022</a></li>
+					<li class="copyright">Theme by <a href="https://smftricks.com" target="_blank" rel="noopener">SMF Tricks</a></li>
+				</ul>
+			</div>
+		</div>
+			<p>Página generada en 0.064 segundos con 23 consultas.</p>
+	</footer>
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					 <h5 class="modal-title">Ingresar</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<script type="text/javascript" src="https://foro.rinconmatematico.com/Themes/default/scripts/sha1.js"></script>
+				<form id="guest_form2" action="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;action=login2" method="post" accept-charset="UTF-8"  onsubmit="hashLoginPassword(this, 'cb72e85382c0334ef5deb031eda6e466');">
+					<div class="modal-body">
+						Bienvenido(a), <strong>Visitante</strong>. Por favor, <a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;action=login">ingresa</a> o <a href="https://foro.rinconmatematico.com/index.php?PHPSESSID=b49f6173f31377922d60907f1d0b4d59&amp;action=register">regístrate</a>.<br>
+						<input type="text" name="user" size="10" class="input_text" />
+						<input type="password" name="passwrd" size="10" class="input_password" />
+						<select name="cookielength">
+							<option value="60">1 Hora</option>
+							<option value="1440">1 Día</option>
+							<option value="10080">1 Semana</option>
+							<option value="43200">1 Mes</option>
+							<option value="-1" selected="selected">Siempre</option>
+						</select>
+						<div class="info">Ingresar con nombre de usuario, contraseña y duración de la sesión</div>
+						<input type="hidden" name="hash_passwrd" value="" />
+						<input type="hidden" name="d1b8a2d913e" value="cb72e85382c0334ef5deb031eda6e466" />
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="button_submit">Ingresar</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body></html>
