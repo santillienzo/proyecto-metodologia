@@ -43,9 +43,11 @@ En algunos casos, el comando podría ser distinto:
 sudo python main.py
 ```
 
-En el caso del Filtro de Imagenes, el programa pedirá que ingrese el nombre de la imagen a procesar. Colocar la imagen en el directorio del programa.
+En el caso del Filtro de Imagenes, el programa pedirá que ingrese el nombre de la imagen a procesar. Colocar la imagen en el directorio del programa. Al terminar de procesar la imagen, mostrará ventanas con los distintos tipos de Convoluciones. Con esto se puede entender el principio de funcionamiento de las Inteligencias Artificiales Convolucionales.
 
 Si se ejecuta el Clasificador de Imágenes, el programa comprueba que exista la carpeta "Imagenes" en el directorio, de no existir, el programa se cierra.
 Se debe colocar dentro de la carpeta Imagenes, todos los archivos que se quieran clasificar y el programa creará automáticamente las carpetas con las categorias.
+
+Actualmente, el programa clasifica imagenes que contengan gatos o perros, solamente con formato .jpg, .jpeg, o .png. Se dejó imagenes de prueba dentro de la carpeta Imagenes para comprobar el funcionamiento. Al ejecutarse, creará automáticamente dos carpetas, Gatos y Perros, y colocará dentro las imagenes que les corresponda.
 
 
