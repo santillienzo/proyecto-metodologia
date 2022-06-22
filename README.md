@@ -12,6 +12,7 @@ La propuesta de este proyecto consiste en la búsqueda de imágenes similares de
 - La biblioteca matplotlib
 - La libreria keras
 - La libreria tensorflow
+- La libreria OpenCv
 
 ## Instalación
 
