@@ -10,9 +10,16 @@ La propuesta de este proyecto consiste en la búsqueda de imágenes similares de
 - La libreria Os-Path
 - La biblioteca numpy
 - La biblioteca matplotlib
-- La biblioteca time
+- La libreria keras
+- La libreria tensorflow
 
 ## Instalación
+
+Se comienza con la instalación del gestor de paquetes PIP de Python. Para instalarlo, ejecutar en la terminal:
+
+```bash
+sudo apt install python3-pip
+```
 
 Desde la terminal del sistema Operativo, y con el gestor de paquetes PIP de Python, ejecutar:
 
@@ -20,13 +27,24 @@ Desde la terminal del sistema Operativo, y con el gestor de paquetes PIP de Pyth
 pip install numpy
 pip install matplotlib
 pip install time
+pip install keras
+pip install tensorflow
+pip install opencv-python
 ```
 
 ## Ejecucion
 Para ejecutar el programa debe ubicarse en la carpeta del programa y ejecutar desde la terminal:
 ```bash
-python Main.py
+sudo python3 main.py
 ```
-Al ejecutarse, el programa pedirá que ingrese el nombre de la imagen a procesar. Colocar la imagen en el directorio del programa.
+En algunos casos, el comando podría ser distinto:
+```bash
+sudo python main.py
+```
+
+En el caso del Filtro de Imagenes, el programa pedirá que ingrese el nombre de la imagen a procesar. Colocar la imagen en el directorio del programa.
+
+Si se ejecuta el Clasificador de Imágenes, el programa comprueba que exista la carpeta "Imagenes" en el directorio, de no existir, el programa se cierra.
+Se debe colocar dentro de la carpeta Imagenes, todos los archivos que se quieran clasificar y el programa creará automáticamente las carpetas con las categorias.
 
 
